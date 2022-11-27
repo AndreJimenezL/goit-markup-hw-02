@@ -1,32 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
 
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 :root {
-    --primary-black-color: #212121;
-    --primary-text-color: #757575;
-    --primary-white-color: #ffffff;
-  
-    --accent-color: #2196f3;
-    --background-black: #21303a;
-    --background-gray: #f5f4fa;
-    --button-filter: #f5f4fa;
-    --button-primary-hover: #188ce8;
-    --logo-black: #000000;
-    --text-white-opacity: #ffffff99;
+  --primary-black-color: #212121;
+  --primary-text-color: #757575;
+  --primary-white-color: #ffffff;
+  --accent-color: #2196f3;
+  --background-black: #21303a;
+  --background-gray: #f5f4fa;
+  --button-filter: #f5f4fa;
+  --button-primary-hover: #188ce8;
+  --logo-black: #000000;
+  --text-white-opacity: #ffffff99;
   }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-
-a{
-    text-decoration: none;
-}
 
 body {
   background-color: var(--primary-white-color);
@@ -34,8 +26,13 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
-  }
-  
+    }
+
+a{
+  text-decoration: none;
+}
+
+ 
 .menu {
   list-style:none;
 }
@@ -73,7 +70,7 @@ text-transform: capitalize;
 }
 
 .contac-menu .link{
-color: var(--primary-text-color);
+color: var(--primary-black-color);
 font-weight: 500;
 font-size: 14px;
 line-height: 1.4;
@@ -123,7 +120,8 @@ header nav .nav-menu {
     padding: 200px var(--container-padding);
     text-align: center;
   }
-  .hero .hero-title {
+  
+.hero .hero-title {
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
@@ -187,7 +185,7 @@ header nav .nav-menu {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--logo-black)
+  color: var(--primary-black-color)
 }
 
 .dedication ul {
@@ -202,7 +200,11 @@ header nav .nav-menu {
   width: 360px;
 }
 
-.team > h2{
+.team ul li h3{
+  color: var(--primary-black-color);
+}
+
+.team h2{
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -210,9 +212,8 @@ header nav .nav-menu {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--logo-black)
+  color: var(--primary-black-color);
 }
-
 /* ----------- Portfolio section ----------- */ 
 
 .portfolio .list li button {
@@ -249,7 +250,16 @@ footer {
 }
 
 address .footer {
-  color: var(--text-white-opacity);
+  color: var(--primary-white-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+}
+
+address .footer_link {
+  color: var(--primary-text-color);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
